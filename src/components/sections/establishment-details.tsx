@@ -10,7 +10,6 @@ interface IEstablishmentProps {
 }
 
 export function EstablishmentDetails({
-  path = "",
   name = "",
   timeShipping = "",
   rating = "",
