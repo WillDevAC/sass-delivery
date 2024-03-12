@@ -5,11 +5,10 @@ import { ListProductRender } from "@/components/sections/list-product-render";
 import { CardHighlited } from "@/components/cards/card-highlited";
 import { InputSearch } from "@/components/ui/input-search";
 
-import { MenuBar } from "@/components/ui/menu-bar"
 
 export function HomePage() {
   return (
-    <section className="bg-white w-screen max-w-[700px]">
+    <>
       <UserNotLoggedButton />
       <EstablishmentDetails
         isOpen={false}
@@ -43,10 +42,15 @@ export function HomePage() {
         </div>
       </div>
       <section className="p-5 pt-1">
-        <ListProductRender categorie="Pães" descriptionCategorie="Descubra nossos pães finos"/>
-        <ListProductRender categorie="Roscas" descriptionCategorie="Descubra nossas deliciosas roscas"/>
+        <ListProductRender
+          categorie="Pães"
+          descriptionCategorie="Descubra nossos pães finos"
+        />
+        <ListProductRender
+          categorie="Roscas"
+          descriptionCategorie="Descubra nossas deliciosas roscas"
+        />
       </section>
-      <MenuBar />
-    </section>
+    </>
   );
 }

@@ -1,11 +1,8 @@
-import { HomePage } from "./pages/home";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./_routes/router";
 
 const App = () => {
-  return (
-    <div className="h-screen w-screen grid place-items-start justify-center">
-      <HomePage/>
-    </div>
-  );
-}
+  return <RouterProvider router={router} />;
+};
 
 export default App;
