@@ -7,7 +7,7 @@ export function InputSearch({ label }: IInputSearchProps) {
     <div className="relative">
       <input
         type="text"
-        className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+        className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:border-red-500"
         placeholder={label}
       />
       <div className="absolute inset-y-0 left-0 flex items-center pl-3">

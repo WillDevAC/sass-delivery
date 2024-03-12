@@ -17,7 +17,7 @@ export function CardHighlited({
   return (
     <article className="bg-white-200 border min-w-[210px] min-h-52 rounded">
       <div
-        className="w-full h-32 bg-gray-400s"
+        className="w-full h-32 bg-gray-400"
         style={{
           backgroundImage: `url(${path})`,
           backgroundSize: "cover",
@@ -31,8 +31,9 @@ export function CardHighlited({
             -{porcentDiscont}
           </div>
         </div>
+        
+        <div className="pt-1">
         <h1 className="text-md font-semibold uppercase">{title}</h1>
-        <div className="pt-2">
           <span className="text-xs text-gray-500">{description}</span>
         </div>
       </div>
